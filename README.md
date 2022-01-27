@@ -94,9 +94,9 @@ func (c *SAPAPICaller) AsyncGetCreditManagementMaster(businessPartner string, ac
 ```
 
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP 与信管理マスタ  の ビジネスパートナデータ が取得された結果の JSON の例です。  
-以下の項目のうち、"BusinessPartner" ～ "to_CreditMgmtAccountTP" は、/SAP_API_Output_Formatter/type.go 内 の Type BusinessPartner {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"BusinessPartner" ～ "to_CreditMgmtAccountTP" は、/SAP_API_Output_Formatter/type.go 内 の Type BusinessPartner {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
@@ -119,6 +119,7 @@ func (c *SAPAPICaller) AsyncGetCreditManagementMaster(businessPartner string, ac
 			"to_CreditMgmtAccountTP": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CRDTMBUSINESSPARTNER/CreditMgmtBusinessPartner('10100005')/to_CreditMgmtAccountTP"
 		}
 	],
-	"time": "2022-01-01T15:21:30.394236+09:00"
+	"time": "2022-01-27T22:02:41+09:00"
 }
+
 ```
